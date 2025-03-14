@@ -13,6 +13,16 @@
     .container {
         background-color: white;
     }
+
+    a:link, a:visited {
+        color: dodgerblue;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(0, 61, 121);
+        text-decoration: underline;
+    }
+
      /****** Layout ******/
         .container {
             display: grid;
@@ -116,6 +126,24 @@
         #nav-menu li.active a,
         #nav-menu li a:hover {
         background-color: #555
+        }
+
+
+        /***** componets *****/
+        .button:link, .button:visited {
+            color: white;
+            background-color: dodgerblue;
+            text-align: center;
+            text-decoration: none;
+            padding: 1rem 1.75rem;
+            border-radius: 2rem;
+            box-shadow: 0 .125rem .5rem rgba(0, 0, 0, 0.15);
+            display: inline-block;
+            margin: 0 .25rem .25rem 0;
+            transition: backgrounder-color 0.5s ease;
+        }
+        .button:hover {
+            background-color: rgb(0, 61, 121);
         }
         
         
